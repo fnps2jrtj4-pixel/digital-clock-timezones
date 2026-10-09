@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Global time</p>
+          <h1>World Clock</h1>
+        </div>
+        <label class="timezone-picker" for="timezoneSelect">
+          <span>Timezone</span>
+          <select id="timezoneSelect" aria-label="Select timezone"></select>
+        </label>
+      </header>
+
+      <main class="clock-card">
+        <div class="location-meta">
+          <p id="timezoneLabel">UTC</p>
+        </div>
+
+        <div class="time-wrap">
+          <div id="timeDisplay" class="time">00:00:00</div>
+          <div id="dateDisplay" class="date">Monday, Jan 1, 2024</div>
+        </div>
+      </main>
+
+      <section class="mini-clocks" aria-label="Additional time zones">
+        <article class="mini-clock" data-timezone="UTC">
+          <h2>UTC</h2>
+          <p class="mini-time">00:00:00</p>
+          <span class="mini-date">Mon, Jan 1</span>
+        </article>
+        <article class="mini-clock" data-timezone="America/New_York">
+          <h2>New York</h2>
+          <p class="mini-time">00:00:00</p>
+          <span class="mini-date">Mon, Jan 1</span>
+        </article>
+        <article class="mini-clock" data-timezone="Europe/London">
+          <h2>London</h2>
+          <p class="mini-time">00:00:00</p>
+          <span class="mini-date">Mon, Jan 1</span>
+        </article>
+        <article class="mini-clock" data-timezone="Asia/Tokyo">
+          <h2>Tokyo</h2>
+          <p class="mini-time">00:00:00</p>
+          <span class="mini-date">Mon, Jan 1</span>
+        </article>
+        <article class="mini-clock" data-timezone="Australia/Sydney">
+          <h2>Sydney</h2>
+          <p class="mini-time">00:00:00</p>
+          <span class="mini-date">Mon, Jan 1</span>
+        </article>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
